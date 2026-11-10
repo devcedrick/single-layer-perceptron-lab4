@@ -101,7 +101,8 @@ parameters and prints a `PASS` / `FAIL` verdict for each row.
 ├── perceptron_console_output.txt   # captured stdout of a real run
 ├── assets/
 │   ├── console_output__and.png     # full AND trace screenshot
-│   └── console_output_and_final.png  # convergence summary screenshot
+│   ├── console_output_and_final.png  # AND convergence summary screenshot
+│   └── console_output_or_final.png   # full OR trace and final results
 └── README.md
 ```
 

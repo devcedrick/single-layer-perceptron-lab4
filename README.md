@@ -97,17 +97,13 @@ parameters and prints a `PASS` / `FAIL` verdict for each row.
 ```text
 .
 ├── perceptron_lab4.py              # model, training loop, trace formatting, CLI
-├── Perceptron_Lab4_Documentation.docx  # lab report: flow, traces, results, links
+├── Perceptron_Lab4_Documentation.docx  # lab report: flow, traces, console, links
 ├── perceptron_console_output.txt   # captured stdout of a real run
-├── perceptron_console_output.png   # rendering of that capture, not an OS screenshot
-├── build_documentation.py          # optional PDF/PNG rebuild; needs reportlab + Pillow
-├── build_report_docx.py            # rebuilds the .docx report; needs python-docx
+├── assets/
+│   ├── console_output__and.png     # full AND trace screenshot
+│   └── console_output_and_final.png  # convergence summary screenshot
 └── README.md
 ```
-
-`build_documentation.py` and `build_report_docx.py` are convenience only: they
-regenerate the report artifacts. Both need extra packages, which the lab
-program itself does not use.
 
 ## Code organization
 
@@ -138,9 +134,8 @@ general decision boundary beyond what these four samples determine.
 ## Documentation
 
 - `Perceptron_Lab4_Documentation.docx` — laboratory report with the execution
-  flow, complete training traces, final results, and links to the source files.
-  Rebuild it with `python build_report_docx.py` (requires `python-docx`; on
-  Windows, Word refreshes the table of contents).
+  flow, complete training traces, console output screenshots, final results,
+  and links to the source files.
 
 ## Academic context
 
